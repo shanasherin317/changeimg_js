@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="frame">
+    <div >
+            <h1 class="heading">DOM Manipulation</h1>
+    <div class="div1">
+            <button id="btn">Change image src [1]</button>
+            <button id="btn1">Change image src [2]</button>
+    </div>
+    <div class="div1">
+        <button id="btn2">Change image src [3]</button>
+        <button id="btn3">Change image src [4]</button>
+   </div>
+   <div class="divos">
+    <img src="https://images.pexels.com/photos/464336/pexels-photo-464336.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" id="img">
+   </div>
+</div>
+</div>
+    <script>
+  document.getElementById("btn")
+  document.getElementById("btn1")
+  document.getElementById("btn2")
+  document.getElementById("btn3")
+
+
+  console.log( document.getElementById("btn"))
+  console.log( document.getElementById("btn1"))
+  console.log( document.getElementById("btn2"))
+  console.log( document.getElementById("btn3"))
+
+
+  let button= document.getElementById("btn");
+  let button1= document.getElementById("btn1");
+  let button2= document.getElementById("btn2");
+  let button3= document.getElementById("btn3");
+
+  document.getElementById("img")
+  console.log( document.getElementById("img"))
+  let picture= document.getElementById("img");
+
+button.addEventListener("click",function() {
+    picture.src="https://images.pexels.com/photos/1128797/pexels-photo-1128797.jpeg?auto=compress&cs=tinysrgb&w=600"   
+   
+})
+button1.addEventListener("click",function(){
+    picture.src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+})
+button2.addEventListener("click",function(){
+    picture.src="https://images.pexels.com/photos/531879/pexels-photo-531879.jpeg?auto=compress&cs=tinysrgb&w=600"
+})
+button3.addEventListener("click",function(){
+    picture.src="https://images.pexels.com/photos/446280/pexels-photo-446280.jpeg?auto=compress&cs=tinysrgb&w=600"
+})
+
+    </script>
+</body>
+</html>
+<style>
+.frame{
+background-color: rgba(150, 67, 205, 0.815);
+width: 100%;
+height: 100vh;
+}
+.div1{
+display: flex;
+justify-content: center;
+}
+.heading{
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+
+}
+#btn{
+    margin-top: 6px;
+    border: dotted;
+}
+#btn1{
+  margin-top: 6px;
+  margin-left: 12px;
+  border: dotted;
+
+}
+#btn2{
+    margin-top: 6px;
+    border: dotted;
+}
+#btn3{
+margin-left: 12px;
+margin-top: 6px;
+border: dotted;
+}
+#img{
+ width: 380px;
+ height: 250px;
+border-radius: 8px;
+}
+.divos{
+    padding-left: 400px;
+    margin-top: 30px;
+}
+
+</style>
